@@ -15,7 +15,7 @@ def start_button(client):
     if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP or FORCE_SUB_ORANG:
         buttons = [
             [
-                InlineKeyboardButton(text="Group", url=client.invitelink2),
+                InlineKeyboardButton(text="JOIN", url=client.invitelink2),
             ],
             [
                 InlineKeyboardButton(text="Close", callback_data="close"),
@@ -25,7 +25,7 @@ def start_button(client):
     if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP or FORCE_SUB_ORANG:
         buttons = [
             [
-                InlineKeyboardButton(text="Channel", url=client.invitelink),
+                InlineKeyboardButton(text="JOIN", url=client.invitelink),
             ],
             [
                 InlineKeyboardButton(text="Close", callback_data="close"),
@@ -35,7 +35,7 @@ def start_button(client):
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP or not FORCE_SUB_ORANG:
         buttons = [
             [
-                InlineKeyboardButton(text="Channel", url=client.invitelink3),
+                InlineKeyboardButton(text="JOIN", url=client.invitelink3),
             ],
             [
                 InlineKeyboardButton(text="Close", callback_data="close"),
@@ -45,9 +45,9 @@ def start_button(client):
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP or FORCE_SUB_ORANG:
         buttons = [
             [
-                InlineKeyboardButton(text="Channel", url=client.invitelink),
-                InlineKeyboardButton(text="Group", url=client.invitelink2),
-                InlineKeyboardButton(text="Group", url=client.invitelink3),
+                InlineKeyboardButton(text="JOIN", url=client.invitelink),
+                InlineKeyboardButton(text="JOIN", url=client.invitelink2),
+                InlineKeyboardButton(text="JOIN", url=client.invitelink3),
             ],
             [InlineKeyboardButton(text="Close", callback_data="close")],
         ]
@@ -58,7 +58,7 @@ def fsub_button(client, message):
     if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP or FORCE_SUB_ORANG:
         buttons = [
             [
-                InlineKeyboardButton(text="Group", url=client.invitelink2),
+                InlineKeyboardButton(text="JOIN", url=client.invitelink2),
             ],
         ]
         try:
@@ -76,7 +76,7 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP or FORCE_SUB_ORANG:
         buttons = [
             [
-                InlineKeyboardButton(text="Channel", url=client.invitelink),
+                InlineKeyboardButton(text="JOIN", url=client.invitelink),
             ],
         ]
         try:
@@ -94,7 +94,7 @@ def fsub_button(client, message):
 if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP or not FORCE_SUB_ORANG:
         buttons = [
             [
-                InlineKeyboardButton(text="Channel", url=client.invitelink3),
+                InlineKeyboardButton(text="JOIN", url=client.invitelink3),
             ],
         ]
         try:
@@ -113,9 +113,9 @@ if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP or not FORCE_SUB_ORANG:
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP or FORCE_SUB_ORANG:
         buttons = [
             [
-                InlineKeyboardButton(text="Channel", url=client.invitelink),
-                InlineKeyboardButton(text="Group", url=client.invitelink2),
-                InlineKeyboardButton(text="Group", url=client.invitelink3),
+                InlineKeyboardButton(text="JOIN", url=client.invitelink),
+                InlineKeyboardButton(text="JOIN", url=client.invitelink2),
+                InlineKeyboardButton(text="JOIN", url=client.invitelink3),
             ],
         ]
         try:
