@@ -12,7 +12,7 @@ from config import (
     FORCE_MSG,
     FORCE_SUB_CHANNEL,
     FORCE_SUB_GROUP,
-    FORCE_SUB_ORANG ,
+    FORCE_SUB_ORANG,
     HEROKU_API_KEY,
     HEROKU_APP_NAME,
     LOGGER,
